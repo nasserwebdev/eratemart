@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+:root {
+  --main-color: rgb(235, 198, 10);
+  --secondary-color: red;
+}
+
+body {
+  font-family: 'Cairo', serif !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Start Header */
+
+.top-header {
+  background-color: var(--main-color);
+}
+
+.left-header a {
+  margin-left: 20px;
+  border-left: 1px solid #000;
+  padding-left: 15px;
+  transition: .3s;
+}
+
+.left-header a:hover {
+  color: var(--secondary-color) !important;
+}
+
+.menu-icon {
+  border-radius: 3px !important;
+  box-shadow: none !important;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.bottom-header {
+  box-shadow: 3px 3px 3px #ccc;
+}
+
+/* End Header */
+
+/* Start Categories */
+.cat img {
+  transition: .3s;
+}
+
+.cat img:hover {
+  scale: 1.1;
+}
+/* End Categories */
+
+/* Start Products */
+.products {
+  margin-top: 70px;
+}
+
+.quick-icons {
+  position: absolute;
+  top: 15px;
+  right: -45px;
+  width: 45px;
+  height: 150px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: .3s;
+}
+
+.product:hover .quick-icons {
+  right: 0;
+}
+
+.quick-icons i {
+  font-size: 18px;
+}
+
+.product-info {
+  padding: 10px
+}
+
+.product-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product-info p {
+  font-size: 14px;
+}
+
+.stars i {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.price :first-child {
+  color: var(--secondary-color);
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.price :last-child {
+  text-decoration: line-through;
+}
+/* End Products */
+
+
+.new-products {
+  background-color: #eee;
+  padding: 70px 0;
+}
+
+.btns-qty button {
+  border: 1px solid #eee;
+}
+
+.btns-qty button:hover {
+  border: 1px solid #ccc;
+}
+
+.btns-qty button:active {
+  border: 1px solid #ccc !important;
+}
+
+@media (max-width: 768px) {
+  .add-btn button {
+    font-size: 13px !important;
+  }
+}
+
+.mini-cart {
+  background-color: #eee;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.mini-cart img {
+  border-radius: 5px;
+}
+
+.btns-qty-mini button {
+  background-color: #fff !important;
+  border: 1px solid #ccc;
+}
+
+.btns-qty-mini button:hover {
+  border: 1px solid #ccc;
+}
+
+.row-mini-cart {
+  padding-bottom: 20px;
+  border-bottom: 2px dashed red;
+}
+
+.mini-login {
+  border: 1px dashed #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Week Products */
+
+.week-end {
+  padding-top: 50px;
+}
+
+.mini-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.product-sm {
+  background-color: #eeeeee87;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px dashed #9d9b9be6;
+  overflow: hidden !important;
+}
+
+.product-sm img {
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.product-sm:hover img {
+  transform: rotate(10deg);
+}
+
+.product-sm .product-info :first-child {
+  font-weight: bold;
+}
+
+.product-sm .product-info :last-child {
+  color: red;
+  font-weight: bold;
+}
+
+.ads {
+  background-color: #eee;
+}
+
+.ad {
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+
+.ad .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .5);
+  z-index: 1 !important
+}
+
+.ad img {
+  transition: .3s;
+}
+
+.ad:hover img {
+  scale: 1.1;
+}
+
+.ad .ad-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: center;
+  z-index:  2 !important;
+}
+
+.ad .ad-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: rgb(196, 194, 194);
+  padding-top:  50px;
+  margin-top: 100px;
+  background-image: url('../images/footerbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 2px solid var(--secondary-color);
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer a {
+  color: rgb(196, 194, 194) !important;
+}
+
+footer .row:first-child {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+
+.f1 p,
+.f4 p {
+  font-size: 14px;
+  width: 90%;
+  margin-top: 20px;
+  line-height: 1.8;
+  color: rgb(196, 194, 194)
+}
+
+footer .navbar-nav li {
+  margin-bottom: 10px;
+} 
+
+/* Product Page */
+.carousel-images {
+  position: absolute;
+  /* جعل الصور بطريقة عمودية بدل افقية */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  bottom: 50px;
+  right: -130px;
+}
+
+.img-slider {
+  width: 90px !important;
+  height:  90px !important;
+  border-radius: 15px;
+  border: 1px solid #000000bb !important;
+}
+
+.p-tabs {
+  border-top: 1px solid #ccc;
+  margin-top: 70px;
+}
+
+.review-title,
+.shipping-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.review-section {
+  box-shadow: 0px 0px 14px 0 #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Category Page */
+
+.banner {
+  background-color: #000;
+  padding: 50px 0;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.category-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.filter-section {
+  background-color: #eee;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Cart */
+
+.cart-product-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.summary {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.cart-item {
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 15px;
+}
+
+/* Checkout */
+.user-info {
+  background-color: #eeeeeec1;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.master-card {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.master-card img {
+  top: 58%;
+  left: 10px;
+}
+
+.iti {
+  width: 100% !important;
+  /* iti: a class for library input container */
+}
+
+.iti__country-list {
+  position: absolute !important;
+  left: 0;
+}
